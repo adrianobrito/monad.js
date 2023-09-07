@@ -86,9 +86,10 @@ console.log(`Result: ${failedResult.resolve()}`)
 assert(failedResult instanceof Failure)
 assert(failedResult.resolve().message === "aaaaa")
 ---
+```
 
 In case you wish to run those examples, you can trigger the following command
 
-```
+```bash
 $ npm test
 ```
