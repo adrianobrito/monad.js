@@ -42,7 +42,7 @@ The `Result` class is a way to handle success and failure scenarios. It has two 
 
 To use this implementation, simply import the `Monad` and `Result` classes into your project and follow the examples presented blow.
 
-```
+```javascript
 const Monad = require('./monad');
 const assert = require("assert");
 const { Success, Failure } = require('./result');
