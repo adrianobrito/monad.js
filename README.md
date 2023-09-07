@@ -8,9 +8,9 @@ Imagine you have a box. This box can contain a value or another box (which can a
 
 In more technical terms, a Monad is a design pattern used in functional programming to handle program-wide concerns, such as state or I/O, in a pure functional way. But for our purposes, just think of it as a special kind of box that has some rules about how you can use it.
 
-## Overview of the Code
+## Overview
 
-### Monad Class
+### Monad
 
 The `Monad` class represents our special box. It has the following methods:
 
@@ -25,7 +25,7 @@ The `Monad` class represents our special box. It has the following methods:
 - `unsafeRun()`: This triggers the execution of the monad. This operation can result in potential errors, if you want to use it in safe way, `attempt()` wrapping is the prefered suggestion
 
 
-### Result Class
+### Result
 
 The `Result` class is a way to handle success and failure scenarios. It has two subclasses:
 
@@ -37,6 +37,7 @@ The `Result` class is a way to handle success and failure scenarios. It has two 
 
 1. Monads provide a consistent way to handle side effects, errors, and other concerns in functional programming. 
 2. By using Monads, you can write more predictable and maintainable code. Even if you're new to functional programming, understanding Monads can give you a new tool to tackle complex problems in JavaScript.
+3. Lazy evaluation of monads enables you to handle concurrency in a more elegant fashion.
 
 ## Getting Started
 
