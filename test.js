@@ -2,7 +2,7 @@ const Monad = require('./monad');
 const assert = require("assert");
 const { Success, Failure } = require('./result');
 
-const firstMonad = Monad.unit(100)
+const firstMonad = Monad.pure(100)
 
 // flatMap composition
 const secondMonad = (y) => {
