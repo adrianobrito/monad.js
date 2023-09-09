@@ -41,9 +41,14 @@ class Monad {
         })
     }
 
-    static unit(x) {
+    static pure(x) {
         return new Monad(() => x)
     }
+
+    static unit() {
+        return new Monad(() => { })
+    }
+
 
 }
 
